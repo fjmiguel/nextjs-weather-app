@@ -1,0 +1,21 @@
+.search {
+  height: 40px;
+  font-size: 18px;
+  font-family: "Varela Round", sans-serif;
+  color: #303030;
+  text-align: right;
+  padding: 0 10px;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 520px) {
+  .search {
+    width: 100%;
+    text-align: center;
+  }
+}
