@@ -7,7 +7,7 @@ export const getTime = (unitSystem, currentTime, timezone) => unitSystem === "me
   ? unixToLocalTime(currentTime, timezone)
   : timeTo12HourFormat(unixToLocalTime(currentTime, timezone));
 
-export const getAMPM = (unitSystem, currentTime, timezone) => unitSystem === "imperial"
+export const getTimeFormatAMPM = (unitSystem, currentTime, timezone) => unitSystem === "imperial"
   ? unixToLocalTime(currentTime, timezone).split(":")[0] >= 12
     ? "PM"
     : "AM"
